@@ -33,7 +33,7 @@ def profile(method):
         )
 
         print(
-            '\n'
+            '\n\n'
             '[METHOD PERFORMANCE]\n'
             f'Model        : {self._name}\n'
             f'Method       : {method.__name__}\n'
@@ -56,6 +56,7 @@ def profile(method):
         else:
             print('SQL QUERIES: None', flush=True)
 
+        print('\n\n', flush=True)
         return result
 
     return wrapper
