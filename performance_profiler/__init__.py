@@ -1,5 +1,6 @@
 from odoo import api
 
-from .profiler import profile
+from .profiler import profile_class, profile_method
 
-api.profile = profile
+api.profile_method = profile_method
+api.profile_class = profile_class
